@@ -1,0 +1,49 @@
+       body{
+		background-color: rgba(255,99,71,0.9);
+		margin:0;
+		padding: 0;
+		}
+		h1{
+			text-align:center;
+		}
+		h2{
+			text-align:right;
+		}
+	 span{
+		background-color: yellow;
+	   }
+	  .col1{
+		background-color: black;
+		color: white;
+		float:right;
+		margin: 1.5%;
+	 }
+	.col2{
+		background-color: grey;
+		color: white;
+		float:right;
+		margin: 1.5%;
+	}
+	.col3{
+		background-color: white;
+		color: black;
+		float: right;
+		margin: 1.5%;
+	}
+	        	.col1{width: 45%;}
+				.col2{width: 45%;}
+				.col3{width: 93%;}
+					
+		@media screen and (max-width: 767px){
+		 /* For mobile phones: */
+             [class*="col"] {
+              width: 100%;
+              }
+		}
+
+		@media  screen and (min-width: 992px){
+		/*desktop*/
+			.col1{width: 30%;}
+			.col2{width: 30%;}
+			.col3{width: 30%;}
+		}
