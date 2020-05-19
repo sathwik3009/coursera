@@ -5,6 +5,7 @@
 		}
 		h1{
 			text-align:center;
+
 		}
 		h2{
 			text-align:right;
@@ -17,12 +18,14 @@
 		color: white;
 		float:right;
 		margin: 1.5%;
+		padding: 0;
 	 }
 	.col2{
 		background-color: grey;
 		color: white;
 		float:right;
 		margin: 1.5%;
+		box-shadow:currentColor;
 	}
 	.col3{
 		background-color: white;
@@ -30,18 +33,25 @@
 		float: right;
 		margin: 1.5%;
 	}
+	[class*="col"]:hover {
+		background-color: black;
+		color:white;
+		margin:3px;
+		padding: 2px;
+	}
  /* For mobile phones: */
              [class*="col"] {
               width: 100%;
+              
               }
        /*tablets*/
-	@media screen and (min-width: 768px){
+	@media only screen and (min-width: 768px){
 	        	.col1{width: 45%;}
 				.col2{width: 45%;}
 				.col3{width: 93%;}
 			}
 
-		@media  screen and (min-width: 992px){
+		@media  only screen and (min-width: 992px){
 		/*desktop*/
 			.col1{width: 30%;}
 			.col2{width: 30%;}

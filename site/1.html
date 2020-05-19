@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JAVASCRIPT</title>
+	<link rel="stylesheet" type="text/css" href="2.css">
+<script type="text/javascript">
+func(){
+	var count=0;
+	count++;
+}
+func1(){
+	if(count==0){
+		div=document.getElementById('la');
+	}
+	if (count==1) {
+		div=document.getElementById('sa');
+	}
+	if (count==2) {
+		div=document.getElementById('pa');
+	}
+}
+
+	</script>
+</head>
+<body>
+
+	<div onclick="func1()"> 
+		<button onclick="func()" >CLICK</button>
+</div>
+
+</body>
+</html>
