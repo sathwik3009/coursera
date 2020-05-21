@@ -5,20 +5,19 @@
 	<meta charset="utf-8">
 </head>
 <body>
+	<h1>MODULE4 SOLUTION</h1>
 <script type="text/javascript">
-	var inputArray=[];
-	var size=5;
+	var inputArray=["John","Yaakov","jim","Paul","Frank","larry","paula","laura"];
+	var size=8;
 
 for (var i=0;i<size;i++) {
 
-	inputArray[i]= prompt('enter Element' +(i+1));
-
 	if(inputArray[i].charAt(0)=='J'){
-		document.write("Goodbye J" + inputArray[i]+".");
+		console.log("Goodbye J" + inputArray[i]+".");
 	}else if(inputArray[i].charAt(0)=='j'){
-  document.write("Goodbye j"+inputArray[i]+".");
+  console.log("Goodbye j"+inputArray[i]+".");
 }else{
-	document.write("Hello"+inputArray[i]+".");
+	console.log("Hello"+inputArray[i]+".");
 }
 }
 
